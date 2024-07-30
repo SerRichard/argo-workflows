@@ -1,0 +1,3 @@
+tarfile:
+  class: File 
+  path: /mnt/pvol/hello.tar

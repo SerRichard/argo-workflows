@@ -118,6 +118,7 @@ If your server is behind an ingress with a path (running "argo server --base-hre
 	command.AddCommand(cron.NewCronWorkflowCommand())
 	command.AddCommand(clustertemplate.NewClusterTemplateCommand())
 	command.AddCommand(executorplugin.NewRootCommand())
+	command.AddCommand(NewTranspileCommand())
 
 	client.AddKubectlFlagsToCmd(command)
 	client.AddAPIClientFlagsToCmd(command)

@@ -1,0 +1,62 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Workflow
+metadata:
+    creationTimestamp: null
+    name: generated-workflow-dwqqavhped
+spec:
+    arguments: {}
+    entrypoint: global-template
+    templates:
+        - inputs: {}
+          metadata: {}
+          name: global-template
+          outputs: {}
+          steps:
+            - - arguments: {}
+                inline:
+                    container:
+                        command:
+                            - echo
+                        image: docker_image_name:tag
+                        name: ""
+                        resources: {}
+                    inputs:
+                        parameters:
+                            - name: message
+                              value: '{{workflow.parameters.OGmessage}}'
+                    metadata: {}
+                    outputs: {}
+                name: step1id
+            - - arguments: {}
+                inline:
+                    container:
+                        command:
+                            - echo
+                        image: docker_image_name:tag
+                        name: ""
+                        resources: {}
+                    inputs:
+                        parameters:
+                            - name: message
+                              value: '{{steps.step1.outputs.parameters.output}}'
+                    metadata: {}
+                    outputs: {}
+                name: step2id
+            - - arguments: {}
+                inline:
+                    container:
+                        command:
+                            - echo
+                        image: docker_image_name:tag
+                        name: ""
+                        resources: {}
+                    inputs:
+                        parameters:
+                            - name: argumentfor3
+                              value: '{{steps.step2.outputs.parameters.output1}}'
+                    metadata: {}
+                    outputs: {}
+                name: step3
+status:
+    finishedAt: null
+    startedAt: null

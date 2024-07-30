@@ -1,0 +1,21 @@
+{
+  "inputs": {
+    "tarfile": {
+      "name": "tarfile",
+      "type": "http",
+      "http": {
+        "url": "https://data-isubasinghe.vercel.app/hello.tar"
+      }
+    }
+  }, 
+  "outputs": {
+    "extracted_file": {
+      "name": "efile", 
+      "type": "s3",
+      "s3": {
+        "bucket": "buckitone",
+        "key": "here"
+      }
+    }
+  }
+}

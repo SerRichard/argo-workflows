@@ -126,6 +126,7 @@ argo [flags]
 * [argo suspend](argo_suspend.md)	 - suspend zero or more workflows (opposite of resume)
 * [argo template](argo_template.md)	 - manipulate workflow templates
 * [argo terminate](argo_terminate.md)	 - terminate zero or more workflows immediately
+* [argo transpile](argo_transpile.md)	 - Transpile common workflow language file to Argo Workflow yaml
 * [argo version](argo_version.md)	 - print version information
 * [argo wait](argo_wait.md)	 - waits for workflows to complete
 * [argo watch](argo_watch.md)	 - watch a workflow until it completes

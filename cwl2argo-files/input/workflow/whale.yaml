@@ -1,0 +1,44 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Workflow
+metadata:
+  generateName: hello-world-
+  labels:
+    workflows.argoproj.io/archive-strategy: "false"
+  annotations:
+    workflows.argoproj.io/description: |
+      This is a simple hello world example.
+spec:
+  arguments:
+    paramteres:
+      - name: one
+        value: "hello one"
+  entrypoint: whalesay
+  templates:
+  - name: whalesay
+    steps:
+    - - name: whalesay-1
+        inline:
+          inputs:
+            parameters:
+                - name: message
+                  value: |
+                    workflow.parameters.one
+            metadata: {}
+          container:
+            image: docker/whalesay:latest
+            command: [cowsay]
+            args: ["hello world"]
+
+    - - name: whalesay-2
+        inline:
+          container:
+            image: docker/whalesay:latest
+            command: [cowsay]
+            args: ["hello world"]
+
+    - - name: whalesay-3
+        inline:
+          container:
+            image: docker/whalesay:latest
+            command: [cowsay]
+            args: ["hello world"]
