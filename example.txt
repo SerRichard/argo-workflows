@@ -1,0 +1,120 @@
+# HELP request_count_total
+# TYPE request_count_total gauge
+request_count_total{type="POST",name="//search"} 80
+# HELP failure_count_total
+# TYPE failure_count_total gauge
+failure_count_total{type="POST",name="//search"} 0
+# HELP median_response_time_seconds
+# TYPE median_response_time_seconds gauge
+median_response_time_seconds{type="POST",name="//search"} 0.19
+# HELP average_response_time_seconds
+# TYPE average_response_time_seconds gauge
+average_response_time_seconds{type="POST",name="//search"} 0.24336936569999995
+# HELP min_response_time_seconds
+# TYPE min_response_time_seconds gauge
+min_response_time_seconds{type="POST",name="//search"} 0.17537795200001938
+# HELP max_response_time_seconds
+# TYPE max_response_time_seconds gauge
+max_response_time_seconds{type="POST",name="//search"} 0.6955418399999758
+# HELP average_content_size_bytes
+# TYPE average_content_size_bytes gauge
+average_content_size_bytes{type="POST",name="//search"} 9408.275
+# HELP requests_per_second
+# TYPE requests_per_second gauge
+requests_per_second{type="POST",name="//search"} 2.810186670741164
+# HELP failures_per_second
+# TYPE failures_per_second gauge
+failures_per_second{type="POST",name="//search"} 0.0
+# HELP 50_percentile
+# TYPE 50_percentile gauge
+50_percentile{type="POST",name="//search"} 190
+# HELP 66_percentile
+# TYPE 66_percentile gauge
+66_percentile{type="POST",name="//search"} 200
+# HELP 75_percentile
+# TYPE 75_percentile gauge
+75_percentile{type="POST",name="//search"} 220
+# HELP 80_percentile
+# TYPE 80_percentile gauge
+80_percentile{type="POST",name="//search"} 280
+# HELP 90_percentile
+# TYPE 90_percentile gauge
+90_percentile{type="POST",name="//search"} 480
+# HELP 95_percentile
+# TYPE 95_percentile gauge
+95_percentile{type="POST",name="//search"} 540
+# HELP 98_percentile
+# TYPE 98_percentile gauge
+98_percentile{type="POST",name="//search"} 620
+# HELP 99_percentile
+# TYPE 99_percentile gauge
+99_percentile{type="POST",name="//search"} 700
+# HELP 99_9_percentile
+# TYPE 99_9_percentile gauge
+99_9_percentile{type="POST",name="//search"} 700
+# HELP 99_99_percentile
+# TYPE 99_99_percentile gauge
+99_99_percentile{type="POST",name="//search"} 700
+# HELP 100_percentile
+# TYPE 100_percentile gauge
+100_percentile{type="POST",name="//search"} 700
+# HELP request_count_total
+# TYPE request_count_total gauge
+request_count_total{type="nan",name="Aggregated"} 80
+# HELP failure_count_total
+# TYPE failure_count_total gauge
+failure_count_total{type="nan",name="Aggregated"} 0
+# HELP median_response_time_seconds
+# TYPE median_response_time_seconds gauge
+median_response_time_seconds{type="nan",name="Aggregated"} 0.19
+# HELP average_response_time_seconds
+# TYPE average_response_time_seconds gauge
+average_response_time_seconds{type="nan",name="Aggregated"} 0.24336936569999995
+# HELP min_response_time_seconds
+# TYPE min_response_time_seconds gauge
+min_response_time_seconds{type="nan",name="Aggregated"} 0.17537795200001938
+# HELP max_response_time_seconds
+# TYPE max_response_time_seconds gauge
+max_response_time_seconds{type="nan",name="Aggregated"} 0.6955418399999758
+# HELP average_content_size_bytes
+# TYPE average_content_size_bytes gauge
+average_content_size_bytes{type="nan",name="Aggregated"} 9408.275
+# HELP requests_per_second
+# TYPE requests_per_second gauge
+requests_per_second{type="nan",name="Aggregated"} 2.810186670741164
+# HELP failures_per_second
+# TYPE failures_per_second gauge
+failures_per_second{type="nan",name="Aggregated"} 0.0
+# HELP 50_percentile
+# TYPE 50_percentile gauge
+50_percentile{type="nan",name="Aggregated"} 190
+# HELP 66_percentile
+# TYPE 66_percentile gauge
+66_percentile{type="nan",name="Aggregated"} 200
+# HELP 75_percentile
+# TYPE 75_percentile gauge
+75_percentile{type="nan",name="Aggregated"} 220
+# HELP 80_percentile
+# TYPE 80_percentile gauge
+80_percentile{type="nan",name="Aggregated"} 280
+# HELP 90_percentile
+# TYPE 90_percentile gauge
+90_percentile{type="nan",name="Aggregated"} 480
+# HELP 95_percentile
+# TYPE 95_percentile gauge
+95_percentile{type="nan",name="Aggregated"} 540
+# HELP 98_percentile
+# TYPE 98_percentile gauge
+98_percentile{type="nan",name="Aggregated"} 620
+# HELP 99_percentile
+# TYPE 99_percentile gauge
+99_percentile{type="nan",name="Aggregated"} 700
+# HELP 99_9_percentile
+# TYPE 99_9_percentile gauge
+99_9_percentile{type="nan",name="Aggregated"} 700
+# HELP 99_99_percentile
+# TYPE 99_99_percentile gauge
+99_99_percentile{type="nan",name="Aggregated"} 700
+# HELP 100_percentile
+# TYPE 100_percentile gauge
+100_percentile{type="nan",name="Aggregated"} 700
